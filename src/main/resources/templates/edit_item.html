@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    <link rel="stylesheet" th:href="@{/css/responsive.css}"/>
+	<title>KHRYZZ ACCESORIES</title>
+</head>
+<body>
+	<div th:replace="header :: header"></div>
+	 <div class="edit-item-div">
+        <h2>Edit Item</h2>
+        
+         <form action="#" th:action="@{/save}" th:object="${item}" method="post">
+	        <label for="name">Item ID</label>
+	        <input type="text" th:field="*{item_id}" readonly="readonly" /><br />
+	        
+         	<label for="name">Item Name</label>
+         	<input type="text" th:field="*{name}"/><br />
+         	
+         	<label for="name">Item Type</label>
+         	<input type="text" th:field="*{type}"/><br />
+         	
+         	<label for="name">Item Brand</label>
+         	<input type="text" th:field="*{brand}"/><br />
+         	
+         	<label for="name">Item Price</label>
+         	<input type="text" th:field="*{price}"/><br />
+         	
+         	<button type="submit">Update</button>
+         	
+         </form>
+        
+    </div>
+   	<div th:replace="footer :: footer"></div>  

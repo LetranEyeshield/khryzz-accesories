@@ -1,0 +1,64 @@
+@charset "ISO-8859-1";
+
+@media screen and (max-width: 1024px){
+	
+	
+}
+
+@media screen and (max-width: 800px){
+	#content .items-div{
+		max-width: 95%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	
+	.new-item-div form label, .edit-item-div form label{
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 570px){
+	#content .items-div{
+		flex-direction: column;
+		width: 85%;
+	}
+}
+
+@media screen and (max-width: 550px){
+	
+	h1{
+		font-size: 38px;
+	}
+}
+
+@media screen and (max-width: 425px){
+	h1{
+		font-size: 30px;
+	}
+	h2{
+		font-size: 27px;
+	}
+	.new-item-div form, .edit-item-div form{
+		text-align: left;
+		padding: 10px 10px;
+	}
+	.new-item-div form input, .edit-item-div form input{
+		width: 55%;
+	}
+	.new-item-div form button, .edit-item-div form button{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 370px){
+	.new-item-div form label, .edit-item-div form label{
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 370px){
+	.new-item-div form input, .edit-item-div form input{
+		width: 50%;
+	}	
+}

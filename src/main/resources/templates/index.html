@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>KHRYZZ ACCESORIES</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    <link rel="stylesheet" th:href="@{/css/responsive.css}"/>
+</head>
+<body>
+	<div th:replace="header :: header"></div>
+	
+		<div id="content">
+			<a class="add-item-btn" href="/new">Add New Item</a>
+			
+		<div class="items-div"  th:each="item : ${listItems}">
+			<div class="item-contents">
+				<h3>Item ID</h3>
+				<p  th:text="${item.item_id}"></p>
+			</div>
+			<div class="item-contents">
+				<h3>Item Name</h3>
+				<p  th:text="${item.name}"></p>
+			</div>
+			<div class="item-contents">
+				<h3>Item Type</h3>
+				<p  th:text="${item.type}"></p>
+			</div>
+			<div class="item-contents">
+				<h3>Item Brand</h3>
+				<p  th:text="${item.brand}"></p>
+			</div>
+			<div class="item-contents">
+				<h3>Item Price</h3>
+				<p  th:text="${item.price}"></p>
+			</div>
+			<div class="item-contents">
+				 <a class="buttons" th:href="@{/edit/{item_id}(item_id=${item.item_id})}">Edit</a>
+                 <a class="buttons" th:href="@{/delete/{item_id}(item_id=${item.item_id})}">Delete</a>
+			</div>
+		</div>
+			
+		</div>
+	
+	<div th:replace="footer :: footer"></div>  
+</body>
+</html>

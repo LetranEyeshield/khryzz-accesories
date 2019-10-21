@@ -1,0 +1,121 @@
+@charset "ISO-8859-1";
+
+*{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+body{
+	background: #C5D4FA;
+}
+
+h1{
+	font-size: 50px;
+	margin: 15px auto 0;
+	color: #1252F3;
+}
+
+h2{
+	font-size: 40px;
+}
+
+h3{
+	font-size: 24px;
+	color: #0A0A96;
+}
+
+p{
+	font-size: 18px;
+}
+
+#content .items-div{
+	display: flex;
+	justify-content: center;
+	border: 2px solid white;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 68%;
+    margin: 25px auto;
+}
+
+#content .items-div .item-contents{
+	margin: 5px;
+	padding: 5px 10px;
+	border: 1px solid #0F72F9;
+}
+
+#content .items-div .item-contents .buttons{
+	display: inline-block;
+	text-decoration: none;
+	color: #2B0FF9;
+	margin: 10px 5px 0;
+	font-weight: bold;
+	background: #0FF5F9;
+	padding: 5px 10px;
+}
+#content .items-div .item-contents .buttons:hover{
+	background: #2B0FF9;
+	color: #0FF5F9;
+	transition: all 0.3s ease-in-out;
+}
+
+#content .add-item-btn{
+	font-size: 20px;
+    text-decoration: none;
+    background: #0FF5F9;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 15px auto 0;
+    color: #000;
+    border: 2px solid #000;
+}
+#content .add-item-btn:hover{
+	color: #0FF5F9;
+	background: #000;
+	border: 2px solid #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+/*new_item*/
+/*edit_item*/
+.new-item-div form, .edit-item-div form{
+	width: 80%;
+    margin: 20px auto 30px;
+    border: 1px solid #0A0A96;
+    padding: 10px 0 15px;
+}
+
+.new-item-div form label, .edit-item-div form label{
+	margin: 10px 5px;
+	font-size: 14px;
+	background: #1252F3;
+	color: #fff;
+	padding: 5px;
+}
+
+.new-item-div form input, .edit-item-div form input{
+	width: 30%;
+	margin: 10px 5px;
+	font-size: 16px;
+	padding: 2px 0 2px 5px;
+	text-align: left;
+}
+
+.new-item-div form button, .edit-item-div form button{
+	font-size: 20px;
+    text-decoration: none;
+    background: #0FF5F9;
+    padding: 5px 10px;
+    display: inline-block;
+    color: #000;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+.new-item-div form button:hover, .edit-item-div form button:hover{
+	color: #0FF5F9;
+	background: #000;
+	transition: all 0.3s ease-in-out;
+}
+
